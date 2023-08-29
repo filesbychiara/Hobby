@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  font-family: "Outfit", sans-serif;
+  line-height: 1.25;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 28px;
+  margin: 8px;
+}
+
+p {
+  font: 18px;
+  margin: 16px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+button {
+  background: #d4c5ac;
+  border: none;
+  border-radius: 32px;
+  cursor: pointer;
+  display: block;
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  margin: 0 auto;
+  padding: 8px 16px;
+  transition: all 150ms ease-in-out;
+  text-align: center;
+}
+
+button a:hover {
+  color: #7b6946;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #787276;
+}
+
+.container {
+  border-radius: 8px;
+  background-color: white;
+  margin: 24px auto;
+  max-width: 600px;
+  padding: 24px;
+}
+
+.darkMode {
+  font-size: 14px;
+  background-color: white;
+  color: black;
+  margin-top: 24px;
+  border-radius: 8px;
+}
+
+.darkMode:hover {
+  background-color: #1b1b1b;
+  color: white;
+}
+.main-pic {
+  border-radius: 8px;
+  transition: all 150ms ease-in-out;
+}
+.main-pic:hover {
+  filter: contrast(95%);
+  transform: scale(1.1);
+}
+
+.grid img {
+  width: 100%;
+  transition: all 150ms ease-in-out;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+  margin: 16px 0;
+}
+
+.grid img:hover {
+  transform: scale(1.5);
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+}
+/* Dark theme */
+.dark {
+  background: black;
+  color: white;
+}
+.dark .darkMode {
+  font-size: 14px;
+  background-color: #1b1b1b;
+  color: white;
+  margin-top: 24px;
+}
+
+.dark .darkMode:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark .container {
+  background: rgba(178, 190, 181, 0.2);
+}
+
+.dark a {
+  color: white;
+}
+
+.dark a:hover {
+  color: #787276;
+}
+
+.dark button {
+  background: black;
+}
+
+.dark a button:hover {
+  color: #1b1b1b;
+}
